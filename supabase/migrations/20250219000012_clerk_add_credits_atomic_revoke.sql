@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION add_credits_atomic(TEXT, INT) FROM PUBLIC;

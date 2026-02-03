@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION increment_brief_count(TEXT, INT) FROM PUBLIC;

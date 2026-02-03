@@ -1,0 +1,1 @@
+REVOKE ALL ON FUNCTION consume_credits_atomic(TEXT, INT, INT) FROM PUBLIC;
