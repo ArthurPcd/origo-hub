@@ -207,7 +207,7 @@ describe('sanitizeErrorMessage', () => {
 
   describe('in development environment', () => {
     beforeEach(() => {
-      process.env.NODE_ENV = 'development';
+      (process.env as Record<string, string>).NODE_ENV = 'development';
     });
 
     it('returns the original error message unchanged', () => {
@@ -221,7 +221,7 @@ describe('sanitizeErrorMessage', () => {
 
   describe('in production environment', () => {
     beforeEach(() => {
-      process.env.NODE_ENV = 'production';
+      (process.env as Record<string, string>).NODE_ENV = 'production';
     });
 
     it('sanitizes "User not found"', () => {
